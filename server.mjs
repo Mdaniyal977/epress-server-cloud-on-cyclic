@@ -1,10 +1,11 @@
 console.log("i am server file")
 
 import express from 'express';
+import path from 'path';
 const app = express()
 const port = process.env.PORT || 3000
 
-app.get('/abc', (req, res) => {
+app.get('/', (req, res) => {
     console.log("request ip", req.ip);
   res.send('Hello World here now!' + new Date().toString() );
 })
