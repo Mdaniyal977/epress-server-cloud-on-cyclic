@@ -5,7 +5,7 @@ import path from 'path';
 const app = express()
 const port = process.env.PORT || 3000
 
-app.get('/', (req, res) => {
+app.get('/daniyal', (req, res) => {
     console.log("request ip", req.ip);
   res.send('Hello World here now!' + new Date().toString() );
 })
