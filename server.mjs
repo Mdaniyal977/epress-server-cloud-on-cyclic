@@ -8,7 +8,8 @@ app.get('/abc', (req, res) => {
     console.log("request ip", req.ip);
   res.send('Hello World here now!' + new Date().toString() );
 })
-
+const __dirname = path.resolve();
+app.use('/',express.static(path.join(__dirname, './web/build')))
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
