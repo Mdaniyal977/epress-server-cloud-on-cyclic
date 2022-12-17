@@ -6,10 +6,17 @@ const app = express()
 const port = process.env.PORT || 5001
 
 
-app.get('/daniyal', (req, res) => {
+app.get('/', (req, res) => {
     console.log("request ip", req.ip);
   res.send('Hello World here now!' + new Date().toString() );
 })
+
+
+app.get('/daniyal', (req, res) => {
+  console.log("request ip", req.ip);
+res.send('Hello World here now!' + new Date().toString() );
+})
+
 const __dirname = path.resolve();
 app.use('/',express.static(path.join(__dirname, './web/build')))
 app.get('/**',express.static(path.join(__dirname, './web/build/index.html')))
