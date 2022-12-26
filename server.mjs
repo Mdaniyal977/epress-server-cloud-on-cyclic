@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
 
 app.get('/daniyal', (req, res) => {
     console.log("request ip", req.ip);
-  res.send('Hello World here now!' + new Date().toString() + "/web/build");
+  res.send('Hello World here now!' + new Date().toString());
 })
 app.get('/dani', (req, res) => {
   console.log("request ip", req.ip);
