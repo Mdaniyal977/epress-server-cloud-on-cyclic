@@ -6,14 +6,14 @@ const app = express()
 const port = process.env.PORT || 5001
 
 
-app.get('/daniyal', (req, res) => {
+app.get('/', (req, res) => {
     console.log("request ip", req.ip);
   res.send('Hello World here now!' + new Date().toString() );
 })
 
 app.get('/daniyal', (req, res) => {
     console.log("request ip", req.ip);
-  res.send('Hello World here now!' + new Date().toString() );
+  res.send('Hello World here now!' + new Date().toString() + "/web/build");
 })
 app.get('/dani', (req, res) => {
   console.log("request ip", req.ip);
