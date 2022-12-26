@@ -19,7 +19,10 @@ app.get('/dani', (req, res) => {
   console.log("request ip", req.ip);
 res.send('Hello World here now!' + new Date().toString() );
 })
-
+app.get('/weather', (req, res) => {
+  console.log("request ip", req.ip);
+res.send('Hello World here now!' + new Date().toString() );
+})
 const __dirname = path.resolve();
 app.use('/',express.static(path.join(__dirname, './web/build')))
 app.use('*',express.static(path.join(__dirname, './web/build/index.html')))
