@@ -8,7 +8,7 @@ const port = process.env.PORT || 5001
 
 app.get('/', (req, res) => {
     console.log("request ip", req.ip);
-  res.send('Hello World here now!' + new Date().toString() );
+  res.send('daniyal!' + new Date().toString() );
 })
 
 app.get('/daniyal', (req, res) => {
