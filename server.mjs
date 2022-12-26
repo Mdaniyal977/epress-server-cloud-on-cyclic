@@ -1,4 +1,4 @@
-console.log("i am server file")
+console.log("i am server file.")
 
 import express from 'express';
 import path from 'path';
